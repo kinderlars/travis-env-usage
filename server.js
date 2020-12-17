@@ -1,3 +1,4 @@
+const RANDOM_STRING = process.env.RANDOM_STRING;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -6,7 +7,7 @@ function sleep(ms) {
 async function main() {
   while(true) {
     console.log("Microservices rock!");
-    console.log(process.env.RANDOM_STRING);
+    console.log(RANDOM_STRING);
     await sleep(5000);
   }
 }
